@@ -1,0 +1,2104 @@
+{
+  "tables": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "menu": [
+    {
+      "id": "idli",
+      "name": "Idli (2 pcs)",
+      "category": "Starters",
+      "price": 60,
+      "description": "Steamed rice cakes served with sambar & coconut chutney.",
+      "image": "/image/Idli.jpg"
+    },
+    {
+      "id": "medu-vada",
+      "name": "Medu Vada (2 pcs)",
+      "category": "Starters",
+      "price": 70,
+      "description": "Crispy lentil doughnuts with sambar & chutney.",
+      "image": "/image/Medu-Vada.jpg"
+    },
+    {
+      "id": "sambar-vada",
+      "name": "Sambar Vada",
+      "category": "Starters",
+      "price": 80,
+      "description": "Vada soaked in hot sambar, topped with onions & coriander.",
+      "image": "/image/Sambar-Vada.jpg"
+    },
+    {
+      "id": "plain-dosa",
+      "name": "Plain Dosa",
+      "category": "Main Course",
+      "price": 90,
+      "description": "Classic crispy dosa with sambar & chutney.",
+      "image": "/image/Plain-Dosa.jpg"
+    },
+    {
+      "id": "masala-dosa",
+      "name": "Masala Dosa",
+      "category": "Main Course",
+      "price": 120,
+      "description": "Crispy dosa with spiced potato masala.",
+      "image": "/image/Masala-dosa.webp"
+    },
+    {
+      "id": "paneer-dosa",
+      "name": "Paneer Dosa",
+      "category": "Main Course",
+      "price": 150,
+      "description": "Dosa stuffed with sautéed paneer & spices.",
+      "image": "/image/Paneer-dosa.jpg"
+    },
+    {
+      "id": "lemon-rice",
+      "name": "Lemon Rice",
+      "category": "Main Course",
+      "price": 110,
+      "description": "Tangy, tempered rice with peanuts & curry leaves.",
+      "image": "/image/Lemon-Rice.jpg"
+    },
+    {
+      "id": "curd-rice",
+      "name": "Curd Rice",
+      "category": "Main Course",
+      "price": 100,
+      "description": "Cooling curd rice with mustard, chilies & pomegranate.",
+      "image": "/image/Curd-Rice.jpg"
+    },
+    {
+      "id": "veg-biryani",
+      "name": "Veg Biryani (South-Style)",
+      "category": "Main Course",
+      "price": 180,
+      "description": "Fragrant rice with mixed veggies & spices.",
+      "image": "/image/veg-Biriyani.jpg"
+    },
+    {
+      "id": "filter-coffee",
+      "name": "Filter Coffee",
+      "category": "Drinks",
+      "price": 50,
+      "description": "Traditional South Indian strong coffee with froth.",
+      "image": "/image/Filter-Coffee.avif"
+    },
+    {
+      "id": "masala-chai",
+      "name": "Masala Chai",
+      "category": "Drinks",
+      "price": 40,
+      "description": "Spiced milk tea with ginger & cardamom.",
+      "image": "/image/Masala-Chai.jpg"
+    },
+    {
+      "id": "buttermilk",
+      "name": "Spiced Buttermilk",
+      "category": "Drinks",
+      "price": 35,
+      "description": "Chilled chaas with roasted cumin & curry leaves.",
+      "image": "/image/Spiced-Buttermilk.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-JM4FCD",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        }
+      ],
+      "total": 140,
+      "etaMinutes": 34,
+      "status": "pending",
+      "createdAt": "2025-10-28T14:37:25.402Z"
+    },
+    {
+      "orderId": "ORD-2MSUNU",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 230,
+      "etaMinutes": 32,
+      "status": "completed",
+      "createdAt": "2025-10-07T16:46:34.365Z",
+      "completedAt": "2025-10-07T16:47:00.041Z"
+    },
+    {
+      "orderId": "ORD-BAQT5U",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 230,
+      "etaMinutes": 34,
+      "status": "completed",
+      "createdAt": "2025-10-07T16:44:10.798Z",
+      "completedAt": "2025-10-07T16:44:29.426Z"
+    },
+    {
+      "orderId": "ORD-6YJSNV",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 2
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 2
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 400,
+      "etaMinutes": 29,
+      "status": "completed",
+      "createdAt": "2025-10-07T16:39:20.252Z",
+      "completedAt": "2025-10-07T16:39:40.554Z"
+    },
+    {
+      "orderId": "ORD-WA9YF9",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        }
+      ],
+      "total": 265,
+      "etaMinutes": 27,
+      "status": "completed",
+      "createdAt": "2025-10-06T15:28:05.815Z",
+      "completedAt": "2025-10-06T15:28:21.975Z"
+    },
+    {
+      "orderId": "ORD-UUC4FY",
+      "table": 3,
+      "items": [
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 90,
+      "etaMinutes": 30,
+      "status": "pending",
+      "createdAt": "2025-10-04T05:18:21.070Z"
+    },
+    {
+      "orderId": "ORD-8NOMD1",
+      "table": 1,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 2
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 2
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 2
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        }
+      ],
+      "total": 390,
+      "etaMinutes": 34,
+      "status": "completed",
+      "createdAt": "2025-10-04T05:17:09.036Z",
+      "completedAt": "2025-10-04T05:19:37.686Z"
+    },
+    {
+      "orderId": "ORD-_EWI8_",
+      "table": 4,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 145,
+      "etaMinutes": 30,
+      "status": "completed",
+      "createdAt": "2025-10-04T04:51:48.364Z",
+      "completedAt": "2025-10-04T05:19:46.408Z"
+    },
+    {
+      "orderId": "ORD-VMZOGR",
+      "table": 3,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 2
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 2
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 2
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 680,
+      "etaMinutes": 22,
+      "status": "completed",
+      "createdAt": "2025-10-04T03:59:48.243Z",
+      "completedAt": "2025-10-04T05:01:58.180Z"
+    },
+    {
+      "orderId": "ORD-ZKDA4D",
+      "table": 5,
+      "items": [
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 90,
+      "etaMinutes": 32,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:21:06.998Z",
+      "completedAt": "2025-10-04T04:00:28.063Z"
+    },
+    {
+      "orderId": "ORD-9DMMGT",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        }
+      ],
+      "total": 210,
+      "etaMinutes": 33,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:19:15.601Z",
+      "completedAt": "2025-10-03T14:21:35.005Z"
+    },
+    {
+      "orderId": "ORD-V7BQGZ",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 70,
+      "etaMinutes": 24,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:08:22.604Z",
+      "completedAt": "2025-10-03T14:19:33.124Z"
+    },
+    {
+      "orderId": "ORD-AYB067",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        }
+      ],
+      "total": 150,
+      "etaMinutes": 25,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:04:07.746Z",
+      "completedAt": "2025-10-03T14:08:45.623Z"
+    },
+    {
+      "orderId": "ORD-C5CO-D",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 70,
+      "etaMinutes": 29,
+      "status": "pending",
+      "createdAt": "2025-10-03T14:01:15.387Z"
+    },
+    {
+      "orderId": "ORD-Q9G-XP",
+      "table": 2,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        }
+      ],
+      "total": 240,
+      "etaMinutes": 26,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:52:28.366Z",
+      "completedAt": "2025-10-06T15:26:33.197Z"
+    },
+    {
+      "orderId": "ORD-ONN4KA",
+      "table": 2,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        }
+      ],
+      "total": 150,
+      "etaMinutes": 26,
+      "status": "pending",
+      "createdAt": "2025-10-03T13:45:21.923Z"
+    },
+    {
+      "orderId": "ORD-LPKFTX",
+      "table": 2,
+      "items": [
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 300,
+      "etaMinutes": 20,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:30:37.169Z",
+      "completedAt": "2025-10-03T13:45:40.322Z"
+    },
+    {
+      "orderId": "ORD-6ZNZNE",
+      "table": 2,
+      "items": [
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        }
+      ],
+      "total": 230,
+      "etaMinutes": 20,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:18:29.594Z",
+      "completedAt": "2025-10-03T13:30:56.458Z"
+    },
+    {
+      "orderId": "ORD-2-N9XJ",
+      "table": 2,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 3
+        },
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 440,
+      "etaMinutes": 28,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:11:02.982Z",
+      "completedAt": "2025-10-03T13:18:47.479Z"
+    },
+    {
+      "orderId": "ORD-A01OJ0",
+      "table": 2,
+      "items": [
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        }
+      ],
+      "total": 240,
+      "etaMinutes": 24,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:04:18.359Z",
+      "completedAt": "2025-10-03T14:04:25.170Z"
+    },
+    {
+      "orderId": "ORD-CV3U-Q",
+      "table": 2,
+      "items": [
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        }
+      ],
+      "total": 210,
+      "etaMinutes": 29,
+      "status": "completed",
+      "createdAt": "2025-10-03T12:56:04.278Z",
+      "completedAt": "2025-10-03T13:31:00.627Z"
+    },
+    {
+      "orderId": "ORD-WL3S_M",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 2
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 2
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 2
+        },
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 1
+        }
+      ],
+      "total": 640,
+      "etaMinutes": 25,
+      "status": "completed",
+      "createdAt": "2025-09-14T13:02:52.485Z",
+      "completedAt": "2025-10-03T14:04:23.938Z"
+    },
+    {
+      "orderId": "ORD-EW0XYJ",
+      "table": 5,
+      "items": [
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 3
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 2
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 2
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 2
+        }
+      ],
+      "total": 660,
+      "etaMinutes": 27,
+      "status": "completed",
+      "createdAt": "2025-09-09T17:19:49.546Z",
+      "completedAt": "2025-09-09T17:20:03.733Z"
+    },
+    {
+      "orderId": "ORD-BRYTAZ",
+      "table": 1,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        }
+      ],
+      "total": 385,
+      "etaMinutes": 22,
+      "status": "completed",
+      "createdAt": "2025-09-09T17:16:49.477Z",
+      "completedAt": "2025-09-09T17:18:43.841Z"
+    },
+    {
+      "orderId": "ORD-FZIYDN",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 2
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        }
+      ],
+      "total": 425,
+      "etaMinutes": 20,
+      "status": "completed",
+      "createdAt": "2025-09-09T16:41:17.591Z",
+      "completedAt": "2025-09-09T17:07:26.392Z"
+    },
+    {
+      "orderId": "ORD-KGY44N",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 1
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 875,
+      "etaMinutes": 34,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:22:31.375Z",
+      "completedAt": "2025-09-09T17:06:18.994Z"
+    },
+    {
+      "orderId": "ORD-JLP2G0",
+      "table": 1,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 130,
+      "etaMinutes": 29,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:21:23.529Z",
+      "completedAt": "2025-09-09T17:06:14.549Z"
+    },
+    {
+      "orderId": "ORD-_ZVUZ6",
+      "table": 3,
+      "items": [
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 4
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 4
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 4
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 4
+        }
+      ],
+      "total": 1920,
+      "etaMinutes": 32,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:20:43.536Z",
+      "completedAt": "2025-10-03T13:53:08.340Z"
+    },
+    {
+      "orderId": "ORD-BXNKE4",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 2
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 2
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 2
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 2
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 2
+        }
+      ],
+      "total": 1295,
+      "etaMinutes": 32,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:19:30.566Z",
+      "completedAt": "2025-09-09T17:06:33.619Z"
+    },
+    {
+      "orderId": "ORD-3GPO_6",
+      "table": 4,
+      "items": [
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 2
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 2
+        }
+      ],
+      "total": 365,
+      "etaMinutes": 25,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:12:00.806Z",
+      "completedAt": "2025-09-09T16:53:40.901Z"
+    },
+    {
+      "orderId": "ORD-VOUQHW",
+      "table": 4,
+      "items": [
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 435,
+      "etaMinutes": 28,
+      "status": "completed",
+      "createdAt": "2025-09-08T08:58:08.763Z",
+      "completedAt": "2025-09-09T16:53:39.083Z"
+    },
+    {
+      "orderId": "ORD-NLP5JF",
+      "table": 1,
+      "items": [
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 2
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 2
+        }
+      ],
+      "total": 460,
+      "etaMinutes": 29,
+      "status": "completed",
+      "createdAt": "2025-09-08T08:56:29.996Z",
+      "completedAt": "2025-09-08T08:58:17.335Z"
+    }
+  ],
+  "kitchen": [
+    {
+      "orderId": "ORD-JM4FCD",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        }
+      ],
+      "total": 140,
+      "etaMinutes": 34,
+      "status": "pending",
+      "createdAt": "2025-10-28T14:37:25.402Z"
+    },
+    {
+      "orderId": "ORD-2MSUNU",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 230,
+      "etaMinutes": 32,
+      "status": "completed",
+      "createdAt": "2025-10-07T16:46:34.365Z"
+    },
+    {
+      "orderId": "ORD-BAQT5U",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 230,
+      "etaMinutes": 34,
+      "status": "completed",
+      "createdAt": "2025-10-07T16:44:10.798Z"
+    },
+    {
+      "orderId": "ORD-6YJSNV",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 2
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 2
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 400,
+      "etaMinutes": 29,
+      "status": "completed",
+      "createdAt": "2025-10-07T16:39:20.252Z"
+    },
+    {
+      "orderId": "ORD-WA9YF9",
+      "table": 3,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        }
+      ],
+      "total": 265,
+      "etaMinutes": 27,
+      "status": "completed",
+      "createdAt": "2025-10-06T15:28:05.815Z"
+    },
+    {
+      "orderId": "ORD-UUC4FY",
+      "table": 3,
+      "items": [
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 90,
+      "etaMinutes": 30,
+      "status": "pending",
+      "createdAt": "2025-10-04T05:18:21.070Z"
+    },
+    {
+      "orderId": "ORD-8NOMD1",
+      "table": 1,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 2
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 2
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 2
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        }
+      ],
+      "total": 390,
+      "etaMinutes": 34,
+      "status": "completed",
+      "createdAt": "2025-10-04T05:17:09.036Z"
+    },
+    {
+      "orderId": "ORD-_EWI8_",
+      "table": 4,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 145,
+      "etaMinutes": 30,
+      "status": "completed",
+      "createdAt": "2025-10-04T04:51:48.364Z"
+    },
+    {
+      "orderId": "ORD-VMZOGR",
+      "table": 3,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 2
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 2
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 2
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 680,
+      "etaMinutes": 22,
+      "status": "completed",
+      "createdAt": "2025-10-04T03:59:48.243Z"
+    },
+    {
+      "orderId": "ORD-ZKDA4D",
+      "table": 5,
+      "items": [
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 90,
+      "etaMinutes": 32,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:21:06.998Z"
+    },
+    {
+      "orderId": "ORD-9DMMGT",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        }
+      ],
+      "total": 210,
+      "etaMinutes": 33,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:19:15.601Z"
+    },
+    {
+      "orderId": "ORD-V7BQGZ",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 70,
+      "etaMinutes": 24,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:08:22.604Z"
+    },
+    {
+      "orderId": "ORD-AYB067",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        }
+      ],
+      "total": 150,
+      "etaMinutes": 25,
+      "status": "completed",
+      "createdAt": "2025-10-03T14:04:07.746Z"
+    },
+    {
+      "orderId": "ORD-C5CO-D",
+      "table": 5,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 70,
+      "etaMinutes": 29,
+      "status": "pending",
+      "createdAt": "2025-10-03T14:01:15.387Z"
+    },
+    {
+      "orderId": "ORD-Q9G-XP",
+      "table": 2,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        }
+      ],
+      "total": 240,
+      "etaMinutes": 26,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:52:28.366Z"
+    },
+    {
+      "orderId": "ORD-ONN4KA",
+      "table": 2,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        }
+      ],
+      "total": 150,
+      "etaMinutes": 26,
+      "status": "pending",
+      "createdAt": "2025-10-03T13:45:21.923Z"
+    },
+    {
+      "orderId": "ORD-LPKFTX",
+      "table": 2,
+      "items": [
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 300,
+      "etaMinutes": 20,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:30:37.169Z"
+    },
+    {
+      "orderId": "ORD-6ZNZNE",
+      "table": 2,
+      "items": [
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        }
+      ],
+      "total": 230,
+      "etaMinutes": 20,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:18:29.594Z"
+    },
+    {
+      "orderId": "ORD-2-N9XJ",
+      "table": 2,
+      "items": [
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 3
+        },
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        }
+      ],
+      "total": 440,
+      "etaMinutes": 28,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:11:02.982Z"
+    },
+    {
+      "orderId": "ORD-A01OJ0",
+      "table": 2,
+      "items": [
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        }
+      ],
+      "total": 240,
+      "etaMinutes": 24,
+      "status": "completed",
+      "createdAt": "2025-10-03T13:04:18.359Z"
+    },
+    {
+      "orderId": "ORD-CV3U-Q",
+      "table": 2,
+      "items": [
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        }
+      ],
+      "total": 210,
+      "etaMinutes": 29,
+      "status": "completed",
+      "createdAt": "2025-10-03T12:56:04.278Z"
+    },
+    {
+      "orderId": "ORD-WL3S_M",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 2
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 2
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 2
+        },
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 1
+        }
+      ],
+      "total": 640,
+      "etaMinutes": 25,
+      "status": "completed",
+      "createdAt": "2025-09-14T13:02:52.485Z"
+    },
+    {
+      "orderId": "ORD-EW0XYJ",
+      "table": 5,
+      "items": [
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 3
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 2
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 2
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 2
+        }
+      ],
+      "total": 660,
+      "etaMinutes": 27,
+      "status": "completed",
+      "createdAt": "2025-09-09T17:19:49.546Z"
+    },
+    {
+      "orderId": "ORD-BRYTAZ",
+      "table": 1,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        }
+      ],
+      "total": 385,
+      "etaMinutes": 22,
+      "status": "completed",
+      "createdAt": "2025-09-09T17:16:49.477Z"
+    },
+    {
+      "orderId": "ORD-FZIYDN",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 2
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        }
+      ],
+      "total": 425,
+      "etaMinutes": 20,
+      "status": "completed",
+      "createdAt": "2025-09-09T16:41:17.591Z"
+    },
+    {
+      "orderId": "ORD-KGY44N",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 1
+        },
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 1
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 875,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:22:31.375Z"
+    },
+    {
+      "orderId": "ORD-JLP2G0",
+      "table": 1,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 1
+        },
+        {
+          "id": "medu-vada",
+          "name": "Medu Vada (2 pcs)",
+          "price": 70,
+          "qty": 1
+        }
+      ],
+      "total": 130,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:21:23.529Z"
+    },
+    {
+      "orderId": "ORD-_ZVUZ6",
+      "table": 3,
+      "items": [
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 4
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 4
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 4
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 4
+        }
+      ],
+      "total": 1920,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:20:43.536Z"
+    },
+    {
+      "orderId": "ORD-BXNKE4",
+      "table": 2,
+      "items": [
+        {
+          "id": "idli",
+          "name": "Idli (2 pcs)",
+          "price": 60,
+          "qty": 2
+        },
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 2
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 2
+        },
+        {
+          "id": "lemon-rice",
+          "name": "Lemon Rice",
+          "price": 110,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 2
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "curd-rice",
+          "name": "Curd Rice",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 2
+        }
+      ],
+      "total": 1295,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:19:30.566Z"
+    },
+    {
+      "orderId": "ORD-3GPO_6",
+      "table": 4,
+      "items": [
+        {
+          "id": "sambar-vada",
+          "name": "Sambar Vada",
+          "price": 80,
+          "qty": 2
+        },
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 2
+        }
+      ],
+      "total": 365,
+      "status": "completed",
+      "createdAt": "2025-09-08T14:12:00.806Z"
+    },
+    {
+      "orderId": "ORD-VOUQHW",
+      "table": 4,
+      "items": [
+        {
+          "id": "plain-dosa",
+          "name": "Plain Dosa",
+          "price": 90,
+          "qty": 1
+        },
+        {
+          "id": "masala-dosa",
+          "name": "Masala Dosa",
+          "price": 120,
+          "qty": 1
+        },
+        {
+          "id": "paneer-dosa",
+          "name": "Paneer Dosa",
+          "price": 150,
+          "qty": 1
+        },
+        {
+          "id": "buttermilk",
+          "name": "Spiced Buttermilk",
+          "price": 35,
+          "qty": 1
+        },
+        {
+          "id": "masala-chai",
+          "name": "Masala Chai",
+          "price": 40,
+          "qty": 1
+        }
+      ],
+      "total": 435,
+      "status": "completed",
+      "createdAt": "2025-09-08T08:58:08.763Z"
+    },
+    {
+      "orderId": "ORD-NLP5JF",
+      "table": 1,
+      "items": [
+        {
+          "id": "veg-biryani",
+          "name": "Veg Biryani (South-Style)",
+          "price": 180,
+          "qty": 2
+        },
+        {
+          "id": "filter-coffee",
+          "name": "Filter Coffee",
+          "price": 50,
+          "qty": 2
+        }
+      ],
+      "total": 460,
+      "status": "completed",
+      "createdAt": "2025-09-08T08:56:29.996Z"
+    }
+  ]
+}

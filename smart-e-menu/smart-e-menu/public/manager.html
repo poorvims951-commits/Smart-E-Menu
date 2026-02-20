@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manager Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    body { background:#f9fafb; font-family:sans-serif; }
+    #login, #dashboard { max-width:800px; margin:40px auto; padding:20px; background:white; border-radius:12px; border:1px solid #ddd; }
+    table { width:100%; border-collapse: collapse; margin-top:16px; }
+    th, td { padding:8px; border-bottom:1px solid #eee; text-align:left; }
+    th { background:#f3f4f6; }
+    .btn { padding:8px 12px; background:#2563eb; color:white; border:none; border-radius:6px; cursor:pointer; }
+    .btn-danger { background:#dc2626; }
+    input { padding:8px; width:100%; margin-bottom:10px; border:1px solid #ccc; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <!-- Login Form -->
+  <div id="login">
+    <h2>Manager Login</h2>
+    <input type="text" id="user" placeholder="Enter username" />
+    <input type="password" id="pwd" placeholder="Enter password" />
+    <button id="loginBtn" class="btn">Login</button>
+    <p id="err" style="color:red;display:none;">Invalid username or password</p>
+  </div>
+
+  <!-- Dashboard -->
+  <div id="dashboard" style="display:none;">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <h2>Orders History</h2>
+      <button id="logoutBtn" class="btn btn-danger">Logout</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Table</th>
+          <th>Items</th>
+          <th>Total</th>
+          <!-- Status column removed -->
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const login = document.getElementById("login");
+    const dash = document.getElementById("dashboard");
+    const rows = document.getElementById("rows");
+    const err = document.getElementById("err");
+
+    // Login
+    document.getElementById("loginBtn").onclick = async () => {
+      const username = document.getElementById("user").value.trim();
+      const password = document.getElementById("pwd").value.trim();
+
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password })
+      });
+
+      if (res.status !== 200) {
+        err.style.display = "block";
+        return;
+      }
+
+      err.style.display = "none";
+      login.style.display = "none";
+      dash.style.display = "block";
+      loadOrders();
+    };
+
+    // Load orders (without status)
+    async function loadOrders() {
+      const res = await fetch("/api/manager/orders");
+      if (res.status === 403) {
+        alert("Session expired. Please log in again.");
+        dash.style.display = "none";
+        login.style.display = "block";
+        return;
+      }
+
+      const data = await res.json();
+      rows.innerHTML = "";
+      data.orders.forEach(o => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${o.orderId}</td>
+          <td>${o.table}</td>
+          <td>${o.items.map(it => it.qty + "× " + it.name).join(", ")}</td>
+          <td>₹${o.total}</td>
+          <!-- Status removed -->
+          <td>${new Date(o.createdAt).toLocaleString()}</td>
+        `;
+        rows.appendChild(tr);
+      });
+    }
+
+    // Logout
+    document.getElementById("logoutBtn").onclick = async () => {
+      await fetch("/api/logout", { method: "POST" });
+      dash.style.display = "none";
+      login.style.display = "block";
+      // Clear input fields and error message on logout
+      document.getElementById("user").value = "";
+      document.getElementById("pwd").value = "";
+      err.style.display = "none";
+    };
+  </script>
+</body>
+</html>

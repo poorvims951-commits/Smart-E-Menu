@@ -1,0 +1,202 @@
+/* styles.css — animated, friendly, appetite-inspiring */
+
+/* ---------- Theme & base ---------- */
+:root{
+  --bg: #fbfbfd;
+  --card: #ffffff;
+  --text: #071433;
+  --muted: #6b7280;
+  --brand: #f97316;   /* orange */
+  --accent: #16a34a;  /* green */
+  --line: #e6eef8;
+  --glass: rgba(255,255,255,0.6);
+  --soft-shadow: 0 8px 20px rgba(16,24,40,0.06);
+  --deep-shadow: 0 18px 40px rgba(16,24,40,0.12);
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+/* Reset basics */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,#fff,#fff); color:var(--text); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+
+/* ---------- Top bar / header ---------- */
+.topbar{
+  position: sticky; top: 0; z-index: 60;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:12px; padding:12px 16px;
+  backdrop-filter: blur(6px) saturate(120%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.6));
+  border-bottom: 1px solid var(--line);
+  box-shadow: var(--soft-shadow);
+  transform: translateZ(0);
+  animation: fadeInDown .6s cubic-bezier(.2,.9,.2,1) both;
+}
+.brand { display:flex; align-items:center; gap:12px; }
+.brand img { width:44px; height:44px; border-radius:10px; box-shadow: var(--soft-shadow); transform-origin:center; animation: brandPop 1.8s ease-in-out infinite; }
+.brand h1{ margin:0; font-size:18px; letter-spacing:0.2px; }
+.muted{ color:var(--muted); font-size:13px; }
+
+/* ---------- Nav ---------- */
+.nav{ display:flex; gap:8px; align-items:center; }
+.nav-link{ padding:8px 12px; border-radius:10px; color:var(--text); font-weight:600; transition: transform .18s ease, background .18s ease; }
+.nav-link:hover{ transform: translateY(-3px); background: #fff6ef; }
+
+/* ---------- Hero ---------- */
+.container{ max-width:1100px; margin: 24px auto; padding: 0 16px; }
+.hero{
+  border-radius:18px; padding:20px;
+  background: linear-gradient(135deg, #fff8f1 0%, #fffefc 100%);
+  border:1px solid var(--line);
+  box-shadow: var(--deep-shadow);
+  overflow: hidden;
+  position: relative;
+}
+.hero::after{
+  content:""; position:absolute; right:-120px; top:-80px;
+  width:420px; height:420px; background: radial-gradient(circle at 30% 30%, rgba(249,115,22,0.08), transparent 30%), radial-gradient(circle at 70% 70%, rgba(22,163,74,0.04), transparent 30%); transform: rotate(20deg);
+  filter: blur(10px); pointer-events:none;
+  animation: slowSpin 22s linear infinite;
+}
+
+/* ---------- Sections & cards ---------- */
+.section{ background: var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; margin-top:16px; box-shadow: var(--soft-shadow); animation: fadeInUp .55s cubic-bezier(.2,.9,.2,1) both; }
+
+.grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:16px; }
+.card{
+  border-radius:12px; overflow:hidden; background:linear-gradient(180deg, #fff, #fff); border:1px solid rgba(0,0,0,0.03);
+  display:flex; flex-direction:column; transition: transform .35s cubic-bezier(.2,.9,.2,1), box-shadow .35s;
+  will-change: transform;
+  transform-origin: center;
+}
+.card:hover{ transform: translateY(-8px) scale(1.01); box-shadow: 0 22px 50px rgba(16,24,40,0.12); }
+
+/* cover image with shimmer */
+.cover{ aspect-ratio: 16/10; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+.cover img{ width:100%; height:100%; object-fit:cover; display:block; transition: transform .9s cubic-bezier(.2,.9,.2,1); transform-origin:center; }
+.card:hover .cover img{ transform: scale(1.06) rotate(-0.6deg); }
+.cover::before{
+  content:""; position:absolute; inset:0; background: linear-gradient(90deg, rgba(255,255,255,0.0) 10%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.0) 90%);
+  transform: translateX(-120%); animation: shimmer 1.8s linear infinite;
+  pointer-events:none;
+  mix-blend-mode: overlay;
+}
+
+/* card content */
+.card h3{ margin:12px 12px 6px 12px; font-size:18px; }
+.card p{ margin:0 12px 8px 12px; color:var(--muted); font-size:14px; min-height:36px; }
+.row{ display:flex; align-items:center; justify-content:space-between; padding:12px; gap:8px; }
+.price{ font-weight:800; color:var(--text); font-size:16px; }
+
+/* ---------- Buttons ---------- */
+.btn{
+  background: linear-gradient(90deg, var(--brand), #ff7a1a);
+  color: white; border:none; padding:10px 14px; border-radius:10px; cursor:pointer;
+  font-weight:800; letter-spacing:0.2px; transition: transform .18s cubic-bezier(.2,.9,.2,1), box-shadow .18s;
+  box-shadow: 0 8px 18px rgba(249,115,22,0.14);
+}
+.btn:hover{ transform: translateY(-4px) scale(1.02); box-shadow: 0 22px 44px rgba(249,115,22,0.14); }
+.btn.ghost{ background: transparent; border:1px solid var(--line); color:var(--text); box-shadow:none; }
+.btn.secondary{ background: linear-gradient(90deg,var(--accent), #16d06a); box-shadow: 0 12px 30px rgba(22,163,74,0.12); }
+
+/* little micro-ripple on click */
+.btn:active{ transform: translateY(-1px) scale(.995); transition-duration: 120ms; }
+
+/* ---------- Tabs / Pills ---------- */
+.tabs{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+.tab{
+  border-radius:999px; padding:8px 12px; border:1px solid var(--line); background:white; cursor:pointer; transition: transform .18s;
+}
+.tab:hover{ transform: translateY(-4px); }
+.tab.active{ background:linear-gradient(90deg,#0ea5e9,#0284c7); color:white; border-color: transparent; box-shadow: 0 12px 36px rgba(2,132,199,0.12); }
+
+/* ---------- Table buttons ---------- */
+.table-picker{ display:flex; gap:10px; flex-wrap:wrap; margin-top:8px; }
+.table-btn{ padding:10px 12px; border-radius:10px; border:1px solid var(--line); background:white; cursor:pointer; }
+.table-btn.active{ background: linear-gradient(90deg,var(--accent), #16d06a); color:white; transform: translateY(-6px); box-shadow: 0 16px 40px rgba(22,163,74,0.12); }
+
+/* ---------- Cart ---------- */
+.cart-list{ display:grid; gap:10px; margin-top:12px; }
+.cart-item{ display:grid; grid-template-columns: 1fr auto auto; gap:8px; background: linear-gradient(180deg,#fff,#fff); padding:10px; border-radius:10px; border:1px solid var(--line); align-items:center; }
+.cart-item .qty{ display:flex; gap:8px; align-items:center; }
+.cart-item .table-btn{ padding:6px 10px; }
+
+/* ---------- Kitchen & minor UI ---------- */
+.k-card{ animation: popIn .5s cubic-bezier(.2,.9,.2,1) both; border-radius:12px; padding:12px; border:1px solid rgba(255,255,255,0.04); background: linear-gradient(180deg,#071433, #081832); color:#e6eefc; }
+
+/* ---------- Tiny helpers ---------- */
+.small{ font-size:12px; color:var(--muted); }
+.hr{ border-top:1px dashed var(--line); margin:12px 0; }
+.total{ display:flex; align-items:center; justify-content:space-between; font-weight:800; margin-top:8px; }
+
+/* ---------- Animations (keyframes) ---------- */
+@keyframes shimmer {
+  0% { transform: translateX(-120%); }
+  50% { transform: translateX(20%); }
+  100% { transform: translateX(120%); }
+}
+@keyframes slowSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes fadeInUp {
+  0% { opacity:0; transform: translateY(12px) scale(.995); }
+  100% { opacity:1; transform: translateY(0) scale(1); }
+}
+@keyframes fadeInDown {
+  0% { opacity:0; transform: translateY(-8px) scale(.998); }
+  100% { opacity:1; transform: translateY(0) scale(1); }
+}
+@keyframes popIn {
+  0% { opacity:0; transform: scale(.94) translateY(8px); }
+  60% { transform: scale(1.02) translateY(-4px); }
+  100% { opacity:1; transform: scale(1) translateY(0); }
+}
+@keyframes brandPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* floating cards effect (subtle, appetite-triggering) */
+.card {
+  animation: floaty 6s ease-in-out infinite;
+}
+@keyframes floaty {
+  0% { transform: translateY(0) rotate(0.0001deg); }
+  50% { transform: translateY(-8px) rotate(-0.2deg); }
+  100% { transform: translateY(0) rotate(0.0001deg); }
+}
+
+/* Small pulse for attention (use sparingly on specials) */
+.pulse {
+  animation: pulseGlow 2.6s ease-in-out infinite;
+  box-shadow: 0 8px 26px rgba(249,115,22,0.10);
+}
+@keyframes pulseGlow {
+  0% { transform: translateY(0) scale(1); box-shadow: 0 6px 20px rgba(249,115,22,0.06); }
+  50% { transform: translateY(-4px) scale(1.01); box-shadow: 0 18px 46px rgba(249,115,22,0.12); }
+  100% { transform: translateY(0) scale(1); box-shadow: 0 6px 20px rgba(249,115,22,0.06); }
+}
+
+/* subtle bounce on nav / small CTA */
+.nav-link, .tab, .table-btn { transition: transform .18s cubic-bezier(.2,.9,.2,1), box-shadow .18s; }
+
+/* skeleton loader */
+.skeleton {
+  background: linear-gradient(90deg, #f3f4f6 0%, #eceff3 50%, #f3f4f6 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+  border-radius: 8px;
+}
+
+/* small responsive tweaks */
+@media (max-width:640px) {
+  .topbar { padding:10px; }
+  .brand img { width:40px; height:40px; }
+  .grid { gap:12px; }
+  .card { min-height: 220px; }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "smart-e-menu",
+  "version": "1.0.0",
+  "description": "QR-based Smart e-Menu for restaurants (South Indian sample)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "keywords": [
+    "qr",
+    "menu",
+    "restaurant",
+    "south-indian",
+    "express"
+  ],
+  "author": "HTML + CSS + Javascript (GPT-5 Thinking)",
+  "license": "MIT",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^4.21.2",
+    "express-session": "^1.18.2",
+    "nanoid": "^5.1.5",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
